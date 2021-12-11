@@ -10,7 +10,7 @@ let secondStage = {
 
 }
 
-let thirdSatege = {
+let thirdStege = {
 
 }
 
