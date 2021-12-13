@@ -2,12 +2,12 @@ console.log("script is loading");
 
 let firstStage = {
     id: 1,
-    story: "Juan got lost in the forest, please help juan find his way out now!",
-    options: ["start heading north", "start heading south", "find a path", "follow the river"]
+    story: "Gilbert woke up in the middle of a hallway in a mansion and is confused. Get him out of it! ",
+    options: ["start heading up the hall", "start heading down the hall"]
 }
 
 let secondStage = {
-
+    id: 2, 
 }
 
 let thirdStege = {
