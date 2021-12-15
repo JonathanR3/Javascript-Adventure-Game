@@ -1,0 +1,99 @@
+console.log("script is loading");
+
+///obtain container for game description
+const gameDescription = document.querySelector(".txtAdventureDescription");
+const optionButtons = document.getElementsByClassName("button");
+
+let startIndex = 1;
+console.log(startIndex);
+
+//function that starts the game
+function startAdventure() {
+    console.log("The Adventure has started");
+}
+let ids = textAdventure.map((item) = > {
+    console.log(item.description);
+    return item.id
+}); 
+
+if (startIndex > ids.length - 1) {
+    startIndex = 0;
+}
+//function that shows the game description
+function showGameOptions(textAdventureID) {
+    const descriptionText = textAdventure.find(gameNode => gameNode.id === textAdventureID);
+    gameDescription.innerText = newGameDescription.dialogue;
+}
+
+//iterate through buttons to show new text options
+for (let i = 0; i < newGameDescription.options.length; i++) {
+    optionButtons[i].innerText = newGameDescription.options[i].buttonText;
+}
+
+//functions for button event
+function onNextOption(event) {
+    event.preventDefault();
+    startIndex++;
+}
+function onPlayAgain(event) {
+    event.preventDefault();
+    startIndex = 0;
+}
+
+//creates object that holds the game text and keeps track of its state
+const textAdventure = [
+    {
+        id: 1,
+        dialogue: "Gilbert woke up in the middle of a hallway in a mansion and is confused. Get him out of it!",
+        options: [
+            {
+            bottomText: "start heading up the hall", 
+            setState: { headUp: true },
+            nextText: 2
+            },
+            {
+            bottomtext: "start heading down the hall"
+            console.log("It's a dead end, try again.")
+            }
+        ]
+    },
+    {
+        id: 2,
+        dialogue: "Gilbert sees a mysterious shaped key on the floor but hears rumbling coming from behind him",
+        options: [
+            {
+                bottomText: "start running right with the key",
+                setState: { run: true},
+                nextText: 3
+            },
+            {
+                bottomText: "turn back and investigate the noise"
+                console.log("A monster grabs you! Try again")
+            }
+        ]
+    },
+    {
+        id: 3,
+        dialogue: "Gilbert sees a wide open door in front of him, but also notices a smaller door with a lock on it",
+        options: [
+            {
+                bottomText: "Head through the open door",
+                console.log()
+            },
+            {
+                bottomText: "Unlock the smaller door with the key",
+                setState: { unlockDoor: true},
+                nextText: 4
+            }
+        ]
+    },
+    {
+        id: 4,
+        dialogue: "In front of Gilbert is a wide open path, "
+
+    }
+
+]
+
+
+startAdventure();
