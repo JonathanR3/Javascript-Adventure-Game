@@ -21,9 +21,19 @@ if (startIndex > ids.length - 1) {
 }
 //function that shows the game description
 function showGameOptions(textAdventureID) {
-    const descriptionText = textAdventure.find(gameNode => gameNode.id === textAdventureID);
-    gameDescription.innerText = newGameDescription.dialogue;
+    const newGameDescription = textAdventure.find(gameNode => gameNode.id === textAdventureID);
 }
+
+if(!newGameDescription.options) {
+    let myButton = document.getElementById("first_btn");
+    myButton.remove();
+    gameDescription.innerText = newGameDescription.dialogue;
+
+    document.getElementById("second_btn").innerHtml = "Play Again";
+    return;
+}
+
+gameDescription.innerText = newGameDescription.dialogue;
 
 //iterate through buttons to show new text options
 for (let i = 0; i < newGameDescription.options.length; i++) {
@@ -97,3 +107,4 @@ const textAdventure = [
 
 
 startAdventure();
+
