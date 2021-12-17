@@ -77,7 +77,7 @@ const textAdventure = [
             nextText: 2,
             },
             {
-            bottomtext: "start heading down the hall",
+            bottomText: "start heading down the hall",
             message: console.log("It's a dead end, try again."),
             },
         ],
@@ -103,7 +103,7 @@ const textAdventure = [
         options: [
             {
                 bottomText: "Head through the open door",
-                message: console.log("Try again"),
+                setState: { continue: true},
             },
             {
                 bottomText: "Unlock the smaller door with the key",
@@ -114,7 +114,7 @@ const textAdventure = [
     },
     {
         id: 4,
-        dialogue: "In front of Gilbert is a wide open path and",
+        dialogue: "Gilbert sees an open path and runs far from the mansion!",
         message: console.log("Thank you for playing and helping Gilbert escape!"),
     },
 ];
