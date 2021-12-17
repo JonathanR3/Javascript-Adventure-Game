@@ -111,7 +111,7 @@ const textAdventure = [
             {
                 bottomText: "Unlock the smaller door with the key",
                 setState: { continue: true},
-                nextText: 4,
+                nextText: 1,
             },
         ],
     },
