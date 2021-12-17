@@ -60,7 +60,7 @@ function onNextOption(event) {
 
 function onPlayAgain(event) {
     event.preventDefault();
-    document.getElementByIdById("first_btn").style.display = "inline";
+    document.getElementById("first_btn").style.display = "inline";
     startIndex = 0;
     onPlay();
 }
@@ -79,6 +79,7 @@ const textAdventure = [
             {
             bottomText: "start heading down the hall",
             message: console.log("It's a dead end, try again."),
+            nextText: 1,
             },
         ],
     },
@@ -94,6 +95,7 @@ const textAdventure = [
             {
                 bottomText: "turn back and investigate the noise",
                 message: console.log("A monster grabs you! Try again"),
+                nextText: 2,
             },
         ],
     },
@@ -104,6 +106,7 @@ const textAdventure = [
             {
                 bottomText: "Head through the open door",
                 setState: { continue: true},
+                nextText: 4,
             },
             {
                 bottomText: "Unlock the smaller door with the key",
