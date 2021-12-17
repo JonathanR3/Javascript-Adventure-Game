@@ -95,7 +95,7 @@ const textAdventure = [
             {
                 bottomText: "turn back and investigate the noise",
                 message: console.log("A monster grabs you! Try again"),
-                nextText: 2,
+                nextText: 1,
             },
         ],
     },
