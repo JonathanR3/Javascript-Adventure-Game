@@ -23,6 +23,10 @@
     .profile {
       border-radius: 50%;
       border: 2px #000 solid;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
     }
 
   body {
