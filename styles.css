@@ -7,6 +7,9 @@
       background-color: #e0ebeb;
     }
 
+    .text-center {
+        text-align: center;
+    }
     button {
       min-width: 250px;
       height: 100px;
